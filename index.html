@@ -6,7 +6,7 @@
   <title>SDN Negeri Citaleus II</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="assets/1747233069960.png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/1747233069960.png">
 </head>
 <body>
 
@@ -23,8 +23,7 @@
       <a href="#contact">Kontak</a>
     </nav>
   </header>
-
-  <!-- HERO SECTION -->
+  
   <section class="hero">
     <div class="hero-slide active" style="background-image: url('assets/coba1.jpg');"></div>
     <div class="hero-slide" style="background-image: url('assets/coba2.jpg');"></div>
@@ -36,7 +35,6 @@
     </div>
   </section>
 
-  <!-- SUB HERO / AI Section -->
   <section class="sub-hero">
     <div class="sub-hero-text">
       <h3>Layanan Berbasis AI</h3>
@@ -45,7 +43,6 @@
     </div>
   </section>
 
-  <!-- SERVICES / CARDS -->
   <section class="cards" id="services">
     <a href="anggota.html" class="card">
       <img src="assets/coba1.jpg" alt="Daftar Anggota Sekolah" />
@@ -80,7 +77,6 @@
     </a>
   </section>
 
-  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div>
       <h4>Kontak Kami</h4>
@@ -104,12 +100,10 @@
     </div>
   </section>  
 
-  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 SDN Negeri Citaleus II. Semua hak dilindungi.</p>
   </footer>
 
-  <!-- JAVASCRIPT -->
   <script>
     const slides = document.querySelectorAll('.hero-slide');
     let current = 0;
@@ -124,9 +118,8 @@
     setInterval(() => {
       current = (current + 1) % slides.length;
       showSlide(current);
-    }, 5000); // Ganti slide tiap 5 detik
-
-    // Observer for cards animation
+    }, 5000);
+    
     const cards = document.querySelectorAll('.card');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
